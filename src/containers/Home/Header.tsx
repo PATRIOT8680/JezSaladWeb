@@ -3,7 +3,12 @@ import './styles/compiled-css/Header.css'
 function Header() {
   return(
     <>
-      <header className='styles.header'>Hello World</header>
+      <header>
+        <div className='logo'>
+          <span className='black'>JEZ</span>
+          <span className='bold'>SALAD</span>
+        </div>
+      </header>
     </>
   )
 }

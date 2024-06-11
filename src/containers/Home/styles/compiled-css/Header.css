@@ -1,7 +1,24 @@
-body {
-  background: grey;
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.header {
-  background: red;
+.logo {
+  padding: 10px 0px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+.logo .black {
+  font-weight: 900;
+  color: #fb9333;
+}
+.logo .bold {
+  margin-left: 10px;
+  font-weight: 700;
+  color: #585858;
 }
