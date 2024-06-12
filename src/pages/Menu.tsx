@@ -2,7 +2,7 @@ const Menu = () => {
   return (
 		<>
 			<div className="menu">
-				Это Menu раздел
+				Раздел Menu в разработке
 			</div>
 		</>
 	)
