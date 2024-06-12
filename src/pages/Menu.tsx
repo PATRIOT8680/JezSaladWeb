@@ -1,11 +1,8 @@
-import Header from '../containers/Home/Header'
-
-function Menu() {
+const Menu = () => {
   return (
 		<>
-			<div className='container'>
-				<Header />
-        Это раздел Menu
+			<div className="menu">
+				Это Menu раздел
 			</div>
 		</>
 	)

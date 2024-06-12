@@ -1,12 +1,10 @@
-import Header from '../containers/Home/Header'
-
 import './styles/compiled-css/Home.css'
 
-function Home() {
+const Home = () => {
   return (
 		<>
-			<div className='container'>
-				<Header />
+			<div className="home">
+				Это Home раздел
 			</div>
 		</>
 	)
