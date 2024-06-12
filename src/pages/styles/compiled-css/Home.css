@@ -1,3 +1,42 @@
 .home {
   margin: 64px 0;
 }
+.home .left_container {
+  width: 590px;
+}
+.home .left_container .recommended_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff0dc;
+  border-radius: 100px;
+  width: 213px;
+  height: 53px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fb9333;
+}
+.home .left_container .firstTitle {
+  display: inline-block;
+  margin: 30px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: -0.02em;
+  color: #575757;
+}
+.home .left_container .firstTitle > span {
+  color: #fb9333;
+}
+.home .left_container .btnMain {
+  margin-top: 30px;
+  width: 192px;
+  height: 68px;
+}

@@ -38,13 +38,15 @@ const App = () => {
 			<BrowserRouter>
 				<div className='container'>
 					<Header />
-					<Routes>
-						<Route path='/' element={<Home />} />
-						<Route path='/menu' element={<Menu />} />
-						<Route path='/contact' element={<Contact />} />
-						<Route path='/about_us' element={<AboutUs />} />
-						<Route path='*' element={<Home />} />
-					</Routes>
+					<div className='containers-page'>
+						<Routes>
+							<Route path='/' element={<Home />} />
+							<Route path='/menu' element={<Menu />} />
+							<Route path='/contact' element={<Contact />} />
+							<Route path='/about_us' element={<AboutUs />} />
+							<Route path='*' element={<Home />} />
+						</Routes>
+					</div>
 					<RedirectionReload />
 				</div>
 			</BrowserRouter>

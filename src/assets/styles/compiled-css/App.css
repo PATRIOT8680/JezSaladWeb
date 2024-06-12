@@ -6,3 +6,41 @@ body {
 .container {
   padding: 30px 135px;
 }
+.container .containers-page {
+  opacity: 0;
+  -webkit-animation: animOpacity 1s forwards;
+          animation: animOpacity 1s forwards;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd;
+  border-radius: 100px;
+}
+
+@-webkit-keyframes animOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
