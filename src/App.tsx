@@ -12,8 +12,8 @@ import HideHeader from './hooks/HideHeader.tsx'
 import './assets/styles/compiled-css/App.css'
 import './assets/fonts/stylesheet.css'
 
-
 const App = () => {
+
 	return (
 		<>
 			<BrowserRouter>

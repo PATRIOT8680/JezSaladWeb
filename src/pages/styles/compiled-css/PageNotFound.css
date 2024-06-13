@@ -1,0 +1,113 @@
+.page_not_found {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+}
+.page_not_found .top_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page_not_found .top_block .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 52px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.page_not_found .top_block .title #one, .page_not_found .top_block .title #three {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-size: 300px;
+  color: #fb9333;
+}
+.page_not_found .top_block .title #two {
+  -webkit-animation: rotating 30s linear infinite;
+          animation: rotating 30s linear infinite;
+}
+.page_not_found .top_block .warning {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fb9333;
+}
+.page_not_found .back {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #e9e8e8;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  margin: 30px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #515151;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.page_not_found .back:hover {
+  color: #414141;
+  background: #d6d5d5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

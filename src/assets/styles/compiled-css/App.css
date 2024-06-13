@@ -7,13 +7,35 @@ body {
   padding: 30px 135px;
 }
 .container .containers-page {
-  opacity: 0;
-  -webkit-animation: animOpacity 1s forwards;
-          animation: animOpacity 1s forwards;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-animation: fadeIn 1s ease;
+          animation: fadeIn 1s ease;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 body::-webkit-scrollbar {
   width: 6px;
 }

@@ -9,10 +9,16 @@ body
   padding: 30px 135px
 
   .containers-page
-    opacity: 0
-    animation: animOpacity 1s forwards
-    transition: all 0.35s
+    animation: fadeIn 1s ease
 
+
+@keyframes fadeIn
+  from
+    opacity: 0
+    transform: translateY(-40px)
+  to
+    opacity: 1
+    transform: translateY(0)
 
 body::-webkit-scrollbar
   width: 6px

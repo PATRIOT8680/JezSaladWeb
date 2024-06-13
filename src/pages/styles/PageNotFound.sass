@@ -1,2 +1,67 @@
-header
-  opacity: 0
+$first-family: "Poppins", sans-serif
+$second-family: "Righteous", sans-serif
+
+.page_not_found
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 30px 0
+
+  .top_block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .title
+      display: flex
+      gap: 52px
+      justify-content: flex-start
+      align-items: center
+      user-select: none
+      pointer-events: none
+
+      #one, #three
+        font-family: $second-family
+        font-weight: 400
+        font-size: 300px
+        color: #fb9333
+
+      #two
+        animation: rotating 30s linear infinite
+      
+    .warning
+      user-select: none
+      font-family: $second-family
+      font-weight: 400
+      font-size: 50px
+      text-transform: uppercase
+      color: #fb9333
+
+  .back
+    border: none
+    outline: none
+    cursor: pointer
+    background: #e9e8e8
+    border-radius: 10px
+    width: 200px
+    height: 50px
+    margin: 30px 0
+    font-family: $first-family
+    font-weight: 600
+    font-size: 16px
+    color: #515151
+    transition: all .3s
+
+    &:hover
+      color: #414141
+      background: #d6d5d5
+      transition: all .3s
+
+
+@keyframes rotating
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
