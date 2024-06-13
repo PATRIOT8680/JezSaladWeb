@@ -1,53 +1,35 @@
-import { useEffect } from 'react'
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 import Home from './pages/Home.tsx'
 import Menu from './pages/Menu.tsx'
 import Contact from './pages/Contact.tsx'
 import AboutUs from './pages/AboutUs.tsx'
+import PageNotFound from './pages/PageNotFound.tsx'
 
-import Header from './components/Main/Header.tsx'
+import PageReload from './hooks/PageReload.ts'
+import HideHeader from './hooks/HideHeader.tsx'
 
 import './assets/styles/compiled-css/App.css'
 import './assets/fonts/stylesheet.css'
 
-const RedirectionReload = () => {
-	const navigate = useNavigate()
-
-	useEffect(() => {
-		if(sessionStorage.getItem('reloaded')) {
-			sessionStorage.removeItem('reloaded')
-			navigate('/')
-		}
-		window.addEventListener('beforeunload', () => {
-			sessionStorage.setItem('reloaded', 'true')
-		})
-		return () => {
-			window.removeEventListener('beforeunload', () => {
-				sessionStorage.setItem('reloaded', 'true')
-			})
-		}
-	}, [navigate])
-
-	return null
-}
 
 const App = () => {
 	return (
 		<>
 			<BrowserRouter>
+				<PageReload />
 				<div className='container'>
-					<Header />
+					<HideHeader />
 					<div className='containers-page'>
 						<Routes>
 							<Route path='/' element={<Home />} />
 							<Route path='/menu' element={<Menu />} />
 							<Route path='/contact' element={<Contact />} />
 							<Route path='/about_us' element={<AboutUs />} />
-							<Route path='*' element={<Home />} />
+							<Route path='/404' element={<PageNotFound />} />
+							<Route path='*' element={<Navigate to='/404' replace />} />
 						</Routes>
 					</div>
-					<RedirectionReload />
 				</div>
 			</BrowserRouter>
 		</>
